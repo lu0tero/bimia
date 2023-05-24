@@ -1,0 +1,36 @@
+.index-body {
+    background: $index-gradient;
+    background-repeat: no-repeat;
+    background-size: cover;
+        .index-main {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+                .welcome-info {
+                    color: white;
+                    font-family: $roboto-font;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                        span {
+                            font-size: 27px;
+                            font-weight: 400;
+                            line-height: 70px;
+                        }
+                        h1 {
+                            font-family: 'Times New Roman', Times, serif;
+                            font-weight: 700;
+                            font-size: 70px;
+                        }
+                        p {
+                            margin-top: 20px;
+                            font-weight: 300;
+                            font-size: 22px;
+                            line-height: 35px;
+                            text-align: justify;
+                            width: 80%;
+                        }
+                }
+        }        
+}

@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+header .logo {
+  font-family: "Times New Roman", Times, serif;
+}
+header .nav-list {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+header .contact-btn {
+  padding: 15px;
+  background: none;
+  font-size: 18px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 500;
+}
+
+.index-body {
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.index-body .index-main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.index-body .index-main .welcome-info {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.index-body .index-main .welcome-info span {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 70px;
+}
+.index-body .index-main .welcome-info h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 70px;
+}
+.index-body .index-main .welcome-info p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+  text-align: justify;
+  width: 80%;
+}
+
+.contact-body {
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.contact-body .contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 30px 0 0 0;
+}
+.contact-body .contact-section .form-container {
+  background-color: #F8F8F8;
+  padding: 25px 40px 0 40px;
+  width: 80%;
+}
+.contact-body .contact-section .form-container .form-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.contact-body .contact-section .form-container .form-info h2 {
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  color: #1E1E1E;
+}
+.contact-body .contact-section .form-container .form-info h2 .highlight {
+  color: black;
+}
+.contact-body .contact-section .form-container .form-info p {
+  font-size: 25px;
+  font-weight: 400;
+  width: 50%;
+  padding-bottom: 30px;
+}
+.contact-body .contact-section .form-container form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.contact-body .contact-section .form-container form .inputs-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding: 50px 0;
+  height: 100%;
+}
+.contact-body .contact-section .form-container form .inputs-container .input-div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.contact-body .contact-section .form-container form .inputs-container .input-div label {
+  font-size: 28px;
+  font-weight: 500;
+}
+.contact-body .contact-section .form-container form .inputs-container .input-div input {
+  width: 50%;
+  border: none;
+  background-color: #F4F4F4;
+  border-bottom: 2px solid #2251FF;
+  font-size: 25px;
+  outline: none;
+  padding: 10px;
+}
+.contact-body .contact-section .form-container form .inputs-container .input-div input::placeholder {
+  color: rgba(44, 44, 44, 0.306);
+}
+.contact-body .contact-section .form-container form .textarea-container {
+  display: flex;
+  position: relative;
+  bottom: 70px;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-body .contact-section .form-container form .textarea-container label {
+  font-size: 28px;
+  font-weight: 600;
+}
+.contact-body .contact-section .form-container form .textarea-container textarea {
+  width: 400px;
+  height: 300px;
+  outline: none;
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid #2251FF;
+  font-size: 25px;
+  font-weight: 400;
+  background-color: #F4F4F4;
+  resize: none;
+}
+.contact-body .contact-section .form-container form .textarea-container .submit-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.contact-body .contact-section .form-container form .textarea-container .submit-container button {
+  border-radius: 3px;
+  height: 75px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  background-color: #2251FF;
+}
+
+.aboutUs-container {
+  font-family: "Roboto", sans-serif;
+}
+.aboutUs-container .aboutUs-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.aboutUs-container .aboutUs-title h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.aboutUs-container .aboutUs-title span {
+  border: 1px solid black;
+}
+.aboutUs-container .aboutUs-title p {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: justify;
+}
+.aboutUs-container .aboutUs-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EFEFEF;
+  padding: 35px 50px;
+  gap: 20px;
+}
+.aboutUs-container .aboutUs-cards-container .aboutUs-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
+  padding: 25px 50px;
+}
+.aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.aboutUs-container .aboutUs-cards-container .aboutUs-card span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.aboutUs-container .aboutUs-cards-container .aboutUs-card p {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.work-body {
+  background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.work-body .work-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.work-body .work-main .work-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work-body .work-main .work-section video {
+  width: 60%;
+  mix-blend-mode: screen;
+}
+.work-body .work-main .work-section .work-info {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+  position: relative;
+  right: 90px;
+}
+.work-body .work-main .work-section .work-info h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  font-weight: 500;
+  width: 90%;
+}
+.work-body .work-main .work-section .work-info p {
+  font-weight: 300;
+  font-size: 22px;
+  text-align: justify;
+}
+.work-body .outstanding-section {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+.work-body .outstanding-section .outstanding-title {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.work-body .outstanding-section .outstanding-title span {
+  width: 100%;
+  border: 0.5px solid black;
+}
+.work-body .outstanding-section .outstanding-title h3 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 15px 0 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.work-body .outstanding-section .outstanding-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 40px;
+}
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
+}
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
+  width: 100%;
+}
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 17px;
+  padding: 5px 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
