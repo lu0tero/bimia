@@ -1,18 +1,35 @@
 .index-body {
     background: $index-gradient;
     background-repeat: no-repeat;
-    background-size: cover;
+   
         .index-main {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
+
+            .welcome-container {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                
+                .index-image-container {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    img {
+                        display: flex;
+                        align-self: flex-end;
+                        justify-self: flex-end;
+                    }
+                }
+
                 .welcome-info {
+                    display: flex;
+                    flex-direction: column;
                     color: white;
                     font-family: $roboto-font;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-direction: column;
+                    gap: 20px;
+                    
                         span {
                             font-size: 27px;
                             font-weight: 400;
@@ -24,7 +41,6 @@
                             font-size: 70px;
                         }
                         p {
-                            margin-top: 20px;
                             font-weight: 300;
                             font-size: 22px;
                             line-height: 35px;
@@ -33,4 +49,5 @@
                         }
                 }
         }        
+    }
 }
