@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
-    font-family: $roboto-font;
+    font-family: $noto-font;
     color: white;
         .logo {
             font-family: 'Times New Roman', Times, serif;
@@ -25,3 +25,24 @@ header {
 }
 
 
+@media only screen and (max-width: 376px) {
+
+    header {
+        padding: 5px 5px;
+            .logo {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 13px;
+            }
+            .nav-list {
+                display: flex;
+                font-size: 13px;
+            }
+            .contact-btn {
+                padding: 0px;
+                background: none;
+                font-size: 13px;
+                border: none;
+                color: white;
+            }
+    }
+}

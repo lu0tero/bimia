@@ -17,7 +17,7 @@
                                 mix-blend-mode: screen;
                             }
                         .work-info {
-                            font-family: $roboto-font;
+                            font-family: $noto-font;
                             display: flex;
                             justify-content: center;
                             gap: 30px;
@@ -43,7 +43,7 @@
 
         .outstanding-section {
             background-color: white;
-            font-family: $roboto-font;
+            font-family: $noto-font;
                 .outstanding-title {
                     display: flex;
                     flex-direction: column;
@@ -91,3 +91,4 @@
                 }
         }
 }
+

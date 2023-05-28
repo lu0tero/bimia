@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 60px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   color: white;
 }
 header .logo {
@@ -49,6 +49,26 @@ header .contact-btn {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 376px) {
+  header {
+    padding: 5px 5px;
+  }
+  header .logo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 13px;
+  }
+  header .nav-list {
+    display: flex;
+    font-size: 13px;
+  }
+  header .contact-btn {
+    padding: 0px;
+    background: none;
+    font-size: 13px;
+    border: none;
+    color: white;
+  }
+}
 .index-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   background-repeat: no-repeat;
@@ -60,12 +80,13 @@ header .contact-btn {
   position: absolute;
   left: 0;
   bottom: 0;
+  gap: 40px;
 }
-.index-body .index-main .welcome-container .index-image-container {
+.index-body .index-main .welcome-container .index-img-container {
   display: flex;
   justify-content: flex-end;
 }
-.index-body .index-main .welcome-container .index-image-container img {
+.index-body .index-main .welcome-container .index-img-container img {
   display: flex;
   align-self: flex-end;
   justify-self: flex-end;
@@ -74,7 +95,7 @@ header .contact-btn {
   display: flex;
   flex-direction: column;
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   gap: 20px;
 }
 .index-body .index-main .welcome-container .welcome-info span {
@@ -106,7 +127,7 @@ header .contact-btn {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   padding: 30px 0 0 0;
 }
 .contact-body .contact-section .form-container {
@@ -209,7 +230,7 @@ header .contact-btn {
 }
 
 .aboutUs-container {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 .aboutUs-container .aboutUs-title {
   display: flex;
@@ -286,7 +307,7 @@ header .contact-btn {
   mix-blend-mode: screen;
 }
 .work-body .work-main .work-section .work-info {
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -309,7 +330,7 @@ header .contact-btn {
 }
 .work-body .outstanding-section {
   background-color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 .work-body .outstanding-section .outstanding-title {
   display: flex;
