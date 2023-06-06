@@ -48,25 +48,52 @@ header .contact-btn {
   color: white;
   font-weight: 500;
 }
+header #burger-menu {
+  display: none;
+}
 
 @media only screen and (max-width: 376px) {
   header {
-    padding: 5px 5px;
-  }
-  header .logo {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 13px;
+    padding: 0;
   }
   header .nav-list {
-    display: flex;
-    font-size: 13px;
+    display: none;
   }
   header .contact-btn {
-    padding: 0px;
-    background: none;
-    font-size: 13px;
+    display: none;
+  }
+  header #burger-menu {
+    display: block;
+  }
+  header.isActive {
+    padding: 0;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header.isActive .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header.isActive .logo {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  header.isActive .contact-btn {
+    display: flex;
     border: none;
-    color: white;
+  }
+  header.isActive #burger-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 .index-body {
@@ -77,9 +104,6 @@ header .contact-btn {
   display: flex;
   align-items: center;
   justify-content: end;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   gap: 40px;
 }
 .index-body .index-main .welcome-container .index-img-container {
