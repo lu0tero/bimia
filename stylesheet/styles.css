@@ -176,23 +176,28 @@ header #burger-menu {
   justify-content: center;
   align-items: center;
   font-family: "Noto Sans", sans-serif;
-  padding: 30px 0 0 0;
+  margin-top: 60px;
+}
+.contact-body .contact-section .contact-lines {
+  position: absolute;
+  z-index: -1;
+  mix-blend-mode: overlay;
+  width: 100%;
 }
 .contact-body .contact-section .form-container {
   background-color: #F8F8F8;
-  padding: 25px 40px 0 40px;
+  padding: 20px 50px;
   width: 80%;
 }
 .contact-body .contact-section .form-container .form-info {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 20px;
 }
 .contact-body .contact-section .form-container .form-info h2 {
   font-size: 65px;
   font-weight: 700;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Catamaran", sans-serif;
   color: #1E1E1E;
 }
 .contact-body .contact-section .form-container .form-info h2 .highlight {
@@ -213,8 +218,9 @@ header #burger-menu {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 90px;
-  padding: 50px 0;
+  gap: 40px;
+  height: 100%;
+  padding: 20px 0;
   height: 100%;
 }
 .contact-body .contact-section .form-container form .inputs-container .input-div {
@@ -226,6 +232,7 @@ header #burger-menu {
 .contact-body .contact-section .form-container form .inputs-container .input-div label {
   font-size: 28px;
   font-weight: 500;
+  width: 18%;
 }
 .contact-body .contact-section .form-container form .inputs-container .input-div input {
   width: 50%;
@@ -242,19 +249,19 @@ header #burger-menu {
 .contact-body .contact-section .form-container form .textarea-container {
   display: flex;
   position: relative;
-  bottom: 70px;
+  bottom: 30px;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 .contact-body .contact-section .form-container form .textarea-container label {
   font-size: 28px;
   font-weight: 600;
 }
 .contact-body .contact-section .form-container form .textarea-container textarea {
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   outline: none;
-  padding: 20px;
+  padding: 10px 20px;
   border: none;
   border-bottom: 2px solid #2251FF;
   font-size: 25px;
@@ -277,6 +284,102 @@ header #burger-menu {
   background-color: #2251FF;
 }
 
+@media only screen and (max-width: 700px) {
+  .contact-body .contact-section .form-container {
+    padding: 15px 40px;
+    width: 80%;
+  }
+  .contact-body .contact-section .form-container .form-info h2 {
+    font-size: 35px;
+  }
+  .contact-body .contact-section .form-container .form-info p {
+    font-size: 25px;
+    width: 100%;
+    padding-bottom: 0px;
+    text-align: justify;
+  }
+  .contact-body .contact-section .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-body .contact-section .form-container form .inputs-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    height: 100%;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div label {
+    width: 100%;
+    font-size: 25px;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div input {
+    width: 100%;
+    font-size: 25px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container textarea {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .contact-body .contact-section .form-container {
+    padding: 15px 40px;
+    width: 80%;
+  }
+  .contact-body .contact-section .form-container .form-info h2 {
+    font-size: 55px;
+  }
+  .contact-body .contact-section .form-container .form-info p {
+    font-size: 30px;
+    width: 100%;
+    padding-bottom: 0px;
+    text-align: justify;
+  }
+  .contact-body .contact-section .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-body .contact-section .form-container form .inputs-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    height: 100%;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div label {
+    width: 100%;
+    font-size: 25px;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div input {
+    width: 100%;
+    font-size: 25px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container textarea {
+    width: 100%;
+    height: 100%;
+  }
+}
 .aboutUs-container {
   font-family: "Noto Sans", sans-serif;
 }
