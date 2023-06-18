@@ -52,7 +52,7 @@ header {
 
     header.isActive {
         position: fixed;
-        z-index: 1;
+        z-index: 3;
         background: $index-gradient;
         font-family: $catamaran;
         width: 100%;
