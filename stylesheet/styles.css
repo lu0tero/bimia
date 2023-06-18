@@ -122,46 +122,64 @@ header #burger-menu {
 }
 .index-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
-  background-repeat: no-repeat;
+  position: relative;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
 }
-.index-body .index-main .welcome-container {
+.index-body .index-main img {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.index-body .index-main .info-container {
   display: flex;
   align-items: center;
-  justify-content: end;
-  gap: 40px;
+  flex-direction: column;
+  width: 55%;
+  height: 55%;
+  gap: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: 0 30px;
 }
-.index-body .index-main .welcome-container .index-img-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.index-body .index-main .welcome-container .index-img-container img {
-  display: flex;
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-.index-body .index-main .welcome-container .welcome-info {
+.index-body .index-main .info-container .info {
   display: flex;
   flex-direction: column;
-  color: white;
-  font-family: "Noto Sans", sans-serif;
-  gap: 20px;
+  gap: 18px;
 }
-.index-body .index-main .welcome-container .welcome-info span {
-  font-size: 27px;
+.index-body .index-main .info-container .info .estas-en {
+  font-size: 25px;
   font-weight: 400;
-  line-height: 70px;
 }
-.index-body .index-main .welcome-container .welcome-info h1 {
-  font-family: "Times New Roman", Times, serif;
+.index-body .index-main .info-container .info .bimia-consulting {
+  font-size: 90px;
   font-weight: 700;
-  font-size: 70px;
 }
-.index-body .index-main .welcome-container .welcome-info p {
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 35px;
-  text-align: justify;
-  width: 80%;
+.index-body .index-main .info-container .info p {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 40px;
+  width: 85%;
+  text-align: start;
+}
+.index-body .index-main .info-container .conocer-mas-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+.index-body .index-main .info-container .conocer-mas-container .conocer-mas {
+  border: 1px solid #05106D;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  color: #05106D;
+  padding: 20px 35px;
 }
 
 .contact-body {

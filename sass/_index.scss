@@ -1,52 +1,68 @@
 .index-body {
     background: $index-gradient;
-    background-repeat: no-repeat;
-   
-        .index-main {
+    position: relative;
+    height: 100%;
+    font-family: $noto-font;
 
-            .welcome-container {
+    .index-main {
+            img {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                z-index: 1;            
+        }
+            .info-container {
                 display: flex;
                 align-items: center;
-                justify-content: end;
-                gap: 40px;
-                
-                .index-img-container {
+                flex-direction: column;
+                width: 55%;
+                height: 55%;
+                gap: 30px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 2;
+                margin: 0 30px;
+
+                .info {
                     display: flex;
-                    justify-content: flex-end;
+                    flex-direction: column;
+                    gap: 18px;
+                    .estas-en {
+                        font-size: 25px;
+                        font-weight: 400;
+                    }
+                    .bimia-consulting {
+                        font-size: 90px;
+                        font-weight: 700;
+                    }
                     
-                    img {
-                        display: flex;
-                        align-self: flex-end;
-                        justify-self: flex-end;
+                    p {
+                        font-size: 25px;
+                        font-weight: 400;
+                        margin-top: 40px;
+                        width: 85%;
+                        text-align: start;
                     }
                 }
 
-                .welcome-info {
+                .conocer-mas-container {
                     display: flex;
-                    flex-direction: column;
-                    color: white;
-                    font-family: $noto-font;
-                    gap: 20px;
+                    width: 100%;
+                    justify-content: flex-end;
+                    padding-right: 100px;
                     
-                        span {
-                            font-size: 27px;
-                            font-weight: 400;
-                            line-height: 70px;
-                        }
-                        h1 {
-                            font-family: 'Times New Roman', Times, serif;
-                            font-weight: 700;
-                            font-size: 70px;
-                        }
-                        p {
-                            font-weight: 300;
-                            font-size: 22px;
-                            line-height: 35px;
-                            text-align: justify;
-                            width: 80%;
-                        }
+                 .conocer-mas{
+                    border: 1px solid #05106D;
+                    background-color: transparent;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: $noto-font;
+                    color: #05106D;
+                    padding: 20px 35px;
                 }
-        }        
-    } 
+            }
+        }
+    }
 }
-
