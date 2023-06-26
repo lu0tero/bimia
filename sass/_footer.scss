@@ -1,0 +1,23 @@
+footer {
+    background-color: #F1ECEC;
+    font-family: $noto-font;
+    border: 1px solid #D3D3D3;
+    width: 100%;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .footer-info-div {
+        display: flex;
+        justify-content: space-between;
+            span {
+                font-size: 18px;
+                font-weight: 400;
+            }
+            ul {
+                display: flex;
+                font-size: 18px;
+                gap: 20px;
+            }
+    }
+}

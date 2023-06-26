@@ -7,7 +7,7 @@
             gap: 20px;
             padding: 40px 20px;
                 h1 {
-                    font-family: 'Times New Roman', Times, serif;
+                    font-family: $catamaran;
                     font-size: 24px;
                     font-weight: 700;
                     text-transform: uppercase;
@@ -23,7 +23,7 @@
         }
         .aboutUs-cards-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             background-color: #EFEFEF;
             padding: 35px 50px;
@@ -32,18 +32,19 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 30px;
+                    gap: 10px;
                     background-color: white;
                     box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
                     padding: 25px 50px;
+                    max-width: 450px;
                         h3 {
-                            font-family: 'Times New Roman', Times, serif;
+                            font-family: $catamaran;
                             font-weight: 700;
                             font-size: 30px;
                         }
                         span {
                             font-size: 18px;
-                            font-weight: 500;
+                            font-weight: 600;
                         }
                         p {
                             font-weight: 500;
@@ -52,4 +53,33 @@
                         }
                 }
         }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutUs-container {
+            .aboutUs-title {
+                gap: 20px;
+                    h1 {
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+            }
+            .aboutUs-cards-container {
+                flex-direction: column;
+                    .aboutUs-card {
+                        max-width: 700px;
+                            h3 {
+                                font-size: 28px;
+                            }
+                            span {
+                                font-size: 16px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                    }
+            }
+    }
 }

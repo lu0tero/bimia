@@ -30,24 +30,42 @@
                 <h2>Trabajemos <span class="highlight">juntos.</span></h2>
                 <p>Nuestro equipo se pondrá en contacto contigo en menos de <strong>24 horas.</strong></p>
             </div>
-            <form action="POST">
+            <form action="https://formsubmit.co/melmolina18@gmail.com" method="POST">
                 <div class="inputs-container">
                     <div class="input-div">
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" placeholder="Escribe tu nombre">
+                        <input type="text" name="name" placeholder="Escribe tu nombre" required>
                     </div>
                     <div class="input-div">
                         <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="Tu dirección de email">
+                        <input type="email" name="email" placeholder="Tu dirección de email" required>
                     </div>
                 </div>
                 <div class="textarea-container">
-                    <textarea name="message" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+                    <textarea name="message" cols="30" rows="10" placeholder="Dejanos tu mensaje" required></textarea>
                     <div class="submit-container"><button type="submit">Consultar</button></div>
                 </div>
+
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </div>
     </main> 
+
+    <footer>
+        <div class="footer-icon-div">
+            <img src="../assets/icons/mail-icon.png" alt="mail-icon">
+            <img src="../assets/icons/linkedin-icon.png" alt="linkedin-icon">
+        </div>
+
+        <div class="footer-info-div">
+            <span>© 2023 BIMIA Consulting. Todos los derechos reservados.</span>
+            <ul>
+                <li>Términos</li>
+                <li>Privacidad</li>
+                <li>Cookies</li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="../index.js"></script>
 

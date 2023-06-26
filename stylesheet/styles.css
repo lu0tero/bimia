@@ -120,6 +120,30 @@ header #burger-menu {
     left: 0;
   }
 }
+footer {
+  background-color: #F1ECEC;
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid #D3D3D3;
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-info-div {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-info-div span {
+  font-size: 18px;
+  font-weight: 400;
+}
+footer .footer-info-div ul {
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+}
+
 .index-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   position: relative;
@@ -200,7 +224,7 @@ header #burger-menu {
   position: absolute;
   z-index: -1;
   mix-blend-mode: overlay;
-  width: 100%;
+  width: 80%;
 }
 .contact-body .contact-section .form-container {
   background-color: #F8F8F8;
@@ -409,7 +433,7 @@ header #burger-menu {
   padding: 40px 20px;
 }
 .aboutUs-container .aboutUs-title h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Catamaran", sans-serif;
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -424,7 +448,7 @@ header #burger-menu {
 }
 .aboutUs-container .aboutUs-cards-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #EFEFEF;
   padding: 35px 50px;
@@ -434,19 +458,20 @@ header #burger-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   background-color: white;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
   padding: 25px 50px;
+  max-width: 450px;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Catamaran", sans-serif;
   font-weight: 700;
   font-size: 30px;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
   font-weight: 500;
@@ -454,6 +479,32 @@ header #burger-menu {
   text-align: justify;
 }
 
+@media only screen and (max-width: 800px) {
+  .aboutUs-container .aboutUs-title {
+    gap: 20px;
+  }
+  .aboutUs-container .aboutUs-title h1 {
+    font-size: 22px;
+  }
+  .aboutUs-container .aboutUs-title p {
+    font-size: 20px;
+  }
+  .aboutUs-container .aboutUs-cards-container {
+    flex-direction: column;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card {
+    max-width: 700px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
+    font-size: 28px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
+    font-size: 16px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
+    font-size: 16px;
+  }
+}
 .work-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   background-repeat: no-repeat;
