@@ -5,12 +5,16 @@
     font-family: $noto-font;
 
     .index-main {
-            img {
+            .robot-image-desktop {
                 position: absolute;
                 width: 100%;
                 bottom: 0;
                 left: 0;
                 z-index: 1;            
+        }
+
+        .robot-hand-mobile{
+            display: none;
         }
             .info-container {
                 display: flex;
@@ -66,3 +70,257 @@
         }
     }
 }
+
+/* ----------- Media queries ------------ */
+
+@media only screen and (max-width: 360px) {
+    .index-body {   
+        .index-main {
+                .robot-hand-mobile {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;            
+            }
+
+            .robot-image-desktop {
+                display: none;
+            }
+                .info-container {
+                    width: 100%;
+                    height: 85%;
+                    gap: 0;
+                    margin: 0;
+                    padding: 0 17px;
+                    color: white;
+    
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        
+                        .estas-en {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        .bimia-consulting {
+                            font-size: 37px;
+                            font-weight: 700;
+                        }
+                        
+                        p {
+                            font-size: 14px;
+                            margin-top: 0;
+                            width: 100%;
+                            text-align: justify;
+                        }
+                    }
+    
+                    .conocer-mas-container {
+                        display: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    .index-body {
+    
+        .index-main {
+                .robot-hand-mobile {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;            
+            }
+
+            .robot-image-desktop {
+                display: none;
+            }
+                .info-container {
+                    width: 100%;
+                    height: 86.5%;
+                    gap: 0;
+                    margin: 0;
+                    padding: 0 17px;
+                    color: white;
+    
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        
+                        .estas-en {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                        .bimia-consulting {
+                            font-size: 37px;
+                            font-weight: 700;
+                        }
+                        
+                        p {
+                            font-size: 14px;
+                            margin-top: 0;
+                            width: 100%;
+                            text-align: justify;
+                        }
+                    }
+    
+                    .conocer-mas-container {
+                        display: none;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1220px) {
+    .index-body {
+        .index-main {
+                .robot-image-desktop {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;            
+            }
+    
+            .robot-hand-mobile{
+                display: none;
+            }
+                .info-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 85%;
+                    color: white;
+                    gap: 30px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                    margin: 0;
+                    padding: 0 30px;
+    
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0px;
+                        .estas-en {
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .bimia-consulting {
+                            font-size: 47px;
+                            font-weight: 700;
+                        }
+                        
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-top: 20px;
+                            width: 100%;
+                            text-align: start;
+                        }
+                    }
+    
+                    .conocer-mas-container {
+                        padding-right:0px;
+                        margin-top: 20px;
+                        
+                     .conocer-mas{
+                        background-color: #2251FF;
+                        color: white;
+                        font-size: 16px;
+                        padding: 15px 40px;
+                    }
+                }
+            }
+        }
+    }
+}    
+
+
+
+@media only screen and (min-width:1221px) and (max-width: 1440px) {
+
+    .index-body {
+        .index-main {
+                .robot-image-desktop {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;            
+            }
+    
+            .robot-hand-mobile{
+                display: none;
+            }
+                .info-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 55%;
+                    height: 55%;
+                    gap: 20px;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                    margin: 0;
+    
+                    .info {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0px;
+                        .estas-en {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                        .bimia-consulting {
+                            font-size: 70px;
+                            font-weight: 700;
+                        }
+                        
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            margin-top: 40px;
+                            width: 85%;
+                            text-align: start;
+                        }
+                    }
+    
+                    .conocer-mas-container {
+                        display: flex;
+                        width: 100%;
+                        justify-content: flex-end;
+                        padding-right: 100px;
+                        
+                     .conocer-mas{
+                        border: 1px solid #05106D;
+                        background-color: transparent;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-family: $noto-font;
+                        color: #05106D;
+                        padding: 15px 25px;
+                    }
+                }
+            }
+        }
+    }
+    
+}    
+/* ---------- Fin media queries ----------- */
