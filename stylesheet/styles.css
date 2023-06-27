@@ -15,15 +15,12 @@ button {
   font-family: inherit;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
   color: white;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -43,6 +40,9 @@ header .nav-list {
 }
 header .nav-list .home-li {
   display: none;
+}
+header .nav-list .section-li {
+  list-style-type: none;
 }
 header .contact-btn {
   padding: 15px;
@@ -120,6 +120,7 @@ header #burger-menu {
     left: 0;
   }
 }
+/* Footer */
 footer {
   background-color: #F1ECEC;
   font-family: "Noto Sans", sans-serif;
@@ -127,22 +128,18 @@ footer {
   width: 100%;
   padding: 20px 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 footer .footer-info-div {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 footer .footer-info-div span {
   font-size: 18px;
   font-weight: 400;
   width: 40%;
-}
-footer .footer-info-div ul {
-  display: flex;
-  font-size: 18px;
-  gap: 20px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -151,6 +148,7 @@ footer .footer-info-div ul {
     flex-direction: column;
   }
 }
+/* Home */
 .index-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   position: relative;
@@ -421,6 +419,7 @@ footer .footer-info-div ul {
   }
 }
 /* ---------- Fin media queries ----------- */
+/* Contacto */
 .contact-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   background-repeat: repeat-y;
@@ -647,6 +646,7 @@ footer .footer-info-div ul {
     height: 100%;
   }
 }
+/* Quienes somos */
 .aboutUs-container {
   font-family: "Noto Sans", sans-serif;
 }
@@ -731,6 +731,7 @@ footer .footer-info-div ul {
     font-size: 16px;
   }
 }
+/* Que hacemos */
 .work-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
   background-repeat: no-repeat;
@@ -968,5 +969,6 @@ footer .footer-info-div ul {
     padding: 5px 0px;
   }
 }
+/* Terminos y poltica */
 
 /*# sourceMappingURL=styles.css.map */
