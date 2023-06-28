@@ -975,5 +975,23 @@ footer .footer-info-div span {
   }
 }
 /* Terminos y poltica */
+.terms-main {
+  font-family: "Noto Sans", sans-serif;
+}
+.terms-main .hero-image-container {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-image: url(/assets/images/hero-image-terms.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.terms-main h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 45px;
+  color: white;
+}
 
 /*# sourceMappingURL=styles.css.map */
