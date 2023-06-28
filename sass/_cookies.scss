@@ -8,9 +8,7 @@
     padding: 20px;
     position: absolute;
     z-index: 100;
-        &.active {
-            display: flex;
-        }
+        
     .cookies-img {
         position: relative;
         right: 50px;
@@ -61,7 +59,12 @@
     height: 100vh;
     top: 0;
     left: 0;
-        &.active {
-            display: block;
-        }
+}
+
+.cookies-background.active {
+    display: block;
+}
+
+.cookies-card.active {
+    display: flex;
 }

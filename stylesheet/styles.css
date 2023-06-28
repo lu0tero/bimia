@@ -160,9 +160,6 @@ footer .footer-info-div span {
   position: absolute;
   z-index: 100;
 }
-.cookies-card.active {
-  display: flex;
-}
 .cookies-card .cookies-img {
   position: relative;
   right: 50px;
@@ -213,8 +210,13 @@ footer .footer-info-div span {
   top: 0;
   left: 0;
 }
+
 .cookies-background.active {
   display: block;
+}
+
+.cookies-card.active {
+  display: flex;
 }
 
 /* Home */
