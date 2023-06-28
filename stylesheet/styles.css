@@ -120,34 +120,6 @@ header #burger-menu {
     left: 0;
   }
 }
-/* Footer */
-footer {
-  background-color: white;
-  font-family: "Noto Sans", sans-serif;
-  border: 1px solid #D3D3D3;
-  width: 100%;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-footer .footer-info-div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-footer .footer-info-div span {
-  font-size: 18px;
-  font-weight: 400;
-  width: 40%;
-}
-
-@media only screen and (max-width: 650px) {
-  footer .footer-info-div ul {
-    display: flex;
-    flex-direction: column;
-  }
-}
 /* Cookies */
 .cookies-card {
   width: 100%;
@@ -970,6 +942,34 @@ footer .footer-info-div span {
   .work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
     font-size: 20px;
     padding: 5px 0px;
+  }
+}
+/* Footer */
+footer {
+  background-color: white;
+  font-family: "Noto Sans", sans-serif;
+  border: 1px solid #D3D3D3;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+footer .footer-info-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footer-info-div span {
+  font-size: 18px;
+  font-weight: 400;
+  width: 40%;
+}
+
+@media only screen and (max-width: 650px) {
+  footer .footer-info-div ul {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* Terminos y poltica */
