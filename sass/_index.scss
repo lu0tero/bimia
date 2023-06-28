@@ -8,16 +8,20 @@
             position: relative;
             width: 100%;
             height: 100%;
+            object-fit: cover;
                
             .robot-image-desktop {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+            .robot-image-lp {
+                display: none;
+            } 
             .robot-image-tb {
                 display: none;
             }
-            .robot-image-mobile {
+            .robot-image-mb{
                 display: none;
             }
         }
@@ -70,24 +74,85 @@
 
 @media only screen and (max-width: 1080px) {
     .index-body {
-        background: $index-gradient;
-        height: 100%;
-        font-family: $noto-font;
         .index-main {
-            height: 100%;
             .robot-image-container {
                 position: relative;
                 width: 100%;
                 height: 100%;
                    
                 .robot-image-desktop {
-                   /*  width: 100%;
-                    height: 100%;
-                    object-fit: contain; */
+                    display: none;
+                }
+                .robot-image-lp {
+                    display: block;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+                .robot-image-tb {
+                    display: none;
+                }
+                .robot-image-mb {
+                    display: none;
+                }
+            }
+        
+            .info-container {
+                color: white;
+                height: 85%;
+                width: 70%;
+                left: 50px;
+
+                .info {
+                    .estas-en {
+                        font-size: 18px;
+                    }
+
+                    .bimia-consulting {
+                        font-size: 60px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        padding-bottom: 50px;
+                    }
+                
+                    .conocer-mas-container {
+                        display: flex;
+                        justify-content: flex-start;
+        
+                        .conocer-mas {
+                            font-size: 18px;
+                            padding: 17px 65px;
+                            background-color: #2251FF;
+                            border: none;
+                            color: white;
+                        }
+                    }
+                }
+    
+                
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .index-body {
+        .index-main {
+            .robot-image-container {
+
+                .robot-image-desktop {
+                    display: none;
+                }
+
+                .robot-image-lp {
                     display: none;
                 }
     
-                .robot-image-mobile {
+                .robot-image-mb {
                     display: none;
                 }
 
@@ -99,45 +164,42 @@
                     left: 0;
                     object-fit: cover;
                 }
+
             }
     
             .info-container {
                 position: absolute;
-                height: 50%;
-                width: 55%;
-                right: 20px;
-                bottom: 0;
-                z-index: 1;
+                height: 90%;
+                width: 95%;
+                left: 20px;
     
                 .info {
                     .estas-en {
-                        font-size: 25px;
+                        font-size: 18px;
                     }
                     
                     .bimia-consulting {
-                        font-size: 80px;
-                        font-family: $catamaran;
-                        font-weight: 700;
-                        line-height: 1.1;
+                        font-size: 60px;
                     }
     
                     p {
-                        font-size: 25px;
+                        font-size: 20px;
                         padding: 20px 0;
+                        padding-bottom: 50px;
                     }
                 
                     .conocer-mas-container {
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: flex-start;
         
                         .conocer-mas {
                             font-size: 20px;
                             font-weight: 600;
                             font-family: $noto-font;
-                            color: #05106D;
-                            border: 1px solid #05106D;
-                            background-color: transparent;
-                            padding: 20px 60px;
+                            color: white;
+                            border: none;
+                            background-color: #2251FF;
+                            padding: 18px 50px;
                         }
                     }
                 }
@@ -149,26 +211,20 @@
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 480px) {
     .index-body {
-        background: $index-gradient;
-        height: 100%;
-        font-family: $noto-font;
         .index-main {
-            height: 100%;
             .robot-image-container {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                   
                 .robot-image-desktop {
-                   /*  width: 100%;
-                    height: 100%;
-                    object-fit: contain; */
                     display: none;
                 }
-    
-                .robot-image-mobile {
+                .robot-image-lp {
+                    display: none;
+                } 
+                .robot-image-tb {
+                    display: none;
+                }
+                .robot-image-mb {
                     display: block;
                     width: 100%;
                     position: absolute;
@@ -177,49 +233,30 @@
                     object-fit: cover;
                 }
 
-                .robot-image-tb {
-                    display: none;
-                }
             }
     
             .info-container {
                 position: absolute;
-                height: 50%;
-                width: 55%;
-                right: 20px;
-                bottom: 0;
-                z-index: 1;
+                height: 85%;
+                width: 95%;
+                left: 15px;
     
                 .info {
                     .estas-en {
-                        font-size: 25px;
+                        font-size: 15px;
                     }
                     
                     .bimia-consulting {
-                        font-size: 80px;
-                        font-family: $catamaran;
-                        font-weight: 700;
-                        line-height: 1.1;
+                        font-size: 43px;
                     }
     
                     p {
-                        font-size: 25px;
-                        padding: 20px 0;
+                        font-size: 17.5px;
+                        padding: 10px 0;
                     }
                 
                     .conocer-mas-container {
-                        display: flex;
-                        justify-content: flex-end;
-        
-                        .conocer-mas {
-                            font-size: 20px;
-                            font-weight: 600;
-                            font-family: $noto-font;
-                            color: #05106D;
-                            border: 1px solid #05106D;
-                            background-color: transparent;
-                            padding: 20px 60px;
-                        }
+                        display: none;
                     }
                 }
     
