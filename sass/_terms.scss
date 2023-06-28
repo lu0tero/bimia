@@ -1,20 +1,59 @@
 .terms-main {
     font-family: $noto-font;
-
-    .hero-image-container {
+    background-color: #f3f3f3;
+    
+    .terms-image-container {
         display: flex;
-        align-items: flex-end;
-        padding: 20px;
-        background-image: url(/assets/images/hero-image-terms.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-    }   
+        justify-content: space-around;
+        align-items: center;
+       
+        img {
+            width: 43%;
+        }
+
+        .hero-info {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            
+            span {
+                color: #2251FF;
+            }
+        }
+    }
 
     h1 {
         font-family: $catamaran;
         font-size: 45px;
-        color: white;
+        font-weight: 700;
     }
+
+    .title-section {
+        text-align: justify;
+        padding-left: 20px;
+        h3 {
+            padding: 20px 0;
+        }
+        .date {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .intro-section {
+            padding-bottom: 20px;
+            width: 80%;
+        }
+
+        .number-title {
+            margin-left: 60px; 
+            padding-top: 20px;
+            padding-bottom: 5px;
+        }
+
+        .number-items {
+            padding: 10px 0;
+        }
+
+
+    }
+
 }

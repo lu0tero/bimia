@@ -972,21 +972,51 @@ footer .footer-info-div span {
 /* Terminos y poltica */
 .terms-main {
   font-family: "Noto Sans", sans-serif;
+  background-color: #f3f3f3;
 }
-.terms-main .hero-image-container {
+.terms-main .terms-image-container {
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
-  background-image: url(/assets/images/hero-image-terms.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+}
+.terms-main .terms-image-container img {
+  width: 43%;
+}
+.terms-main .terms-image-container .hero-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.terms-main .terms-image-container .hero-info span {
+  color: #2251FF;
 }
 .terms-main h1 {
   font-family: "Catamaran", sans-serif;
   font-size: 45px;
-  color: white;
+  font-weight: 700;
+}
+.terms-main .title-section {
+  text-align: justify;
+  padding-left: 20px;
+}
+.terms-main .title-section h3 {
+  padding: 20px 0;
+}
+.terms-main .title-section .date {
+  font-weight: 500;
+  font-size: 14px;
+}
+.terms-main .title-section .intro-section {
+  padding-bottom: 20px;
+  width: 80%;
+}
+.terms-main .title-section .number-title {
+  margin-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.terms-main .title-section .number-items {
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
