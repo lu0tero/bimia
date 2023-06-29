@@ -88,5 +88,55 @@
         }
 
     }
+}
 
+@media only screen and (max-width: 780px) {
+    .terms-main {
+        .bimia {
+            font-size: 25px;
+        }
+    
+        .terms-image-container {
+            flex-direction: column;
+            align-items: flex-start;
+            
+            img {
+                width: 45%;
+            }
+            .hero-info {
+                span {
+                    color: #2251FF;
+                }
+            }
+        }
+    
+        h1 {
+            font-size: 30px;
+        }
+    
+        .title-section {
+           .title {
+                font-size: 20px;
+            }
+        }
+    
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    .terms-main {
+        padding-left: 0;
+        .terms-image-container {            
+            img {
+                width: 100%;
+            }
+            .hero-info {
+                padding-left: 20px;
+            }
+        }
+    .title-section {
+        width: 95%;
+    }
+    }
 }
