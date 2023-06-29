@@ -1,7 +1,15 @@
 .terms-main {
     font-family: $noto-font;
     background-color: #f3f3f3;
+    padding-left: 20px;
     
+    .bimia {
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+       padding: 25px;
+    }
+
     .terms-image-container {
         display: flex;
         justify-content: space-around;
@@ -31,8 +39,10 @@
     .title-section {
         text-align: justify;
         padding-left: 20px;
-        h3 {
+        width: 80%;
+       .title {
             padding: 20px 0;
+            font-size: 25px;
         }
         .date {
             font-weight: 500;
@@ -40,19 +50,42 @@
         }
         .intro-section {
             padding-bottom: 20px;
-            width: 80%;
+            
         }
 
         .number-title {
             margin-left: 60px; 
             padding-top: 20px;
             padding-bottom: 5px;
+            font-weight: 600;
+            color: #2251FF;
         }
 
         .number-items {
             padding: 10px 0;
         }
 
+        .bullet-list {
+            list-style: disc;
+            padding-left: 50px; 
+            
+            .bullet-list-item {
+                padding-bottom: 10px;
+            }
+        }
+
+        .cookies-span {
+            font-weight: 500;
+        }
+
+        .email {
+            color: #2251FF;
+        }
+
+        .actualizado {
+            font-size: 14px;
+            font-weight: 500;
+        }
 
     }
 
