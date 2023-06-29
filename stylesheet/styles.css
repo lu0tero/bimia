@@ -1061,6 +1061,14 @@ footer .footer-info-div span {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 420px) {
+  footer {
+    padding: 20px;
+  }
+  footer .footer-info-div span {
+    font-size: 15px;
+  }
+}
 /* Terminos y poltica */
 .terms-main {
   font-family: "Noto Sans", sans-serif;
