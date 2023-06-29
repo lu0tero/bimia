@@ -800,7 +800,7 @@ header #burger-menu {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .aboutUs-container .aboutUs-title {
     gap: 20px;
   }
@@ -816,11 +816,46 @@ header #burger-menu {
   .aboutUs-container .aboutUs-cards-container .aboutUs-card {
     max-width: 700px;
   }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card img {
+    width: 180px;
+  }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
-    font-size: 28px;
+    font-size: 23px;
   }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
+    font-size: 15px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .aboutUs-container .aboutUs-title {
+    gap: 20px;
+  }
+  .aboutUs-container .aboutUs-title h1 {
+    font-size: 20px;
+  }
+  .aboutUs-container .aboutUs-title p {
+    font-size: 20px;
+  }
+  .aboutUs-container .aboutUs-cards-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card {
+    max-width: 800px;
+    padding: 20px 30px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card img {
+    width: 150px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
+    font-size: 20px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
+    font-size: 15px;
   }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
     font-size: 16px;

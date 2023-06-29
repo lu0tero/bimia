@@ -84,3 +84,70 @@
             }
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutUs-container {
+            .aboutUs-title {
+                gap: 20px;
+                    h1 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+            }
+            .aboutUs-cards-container {
+                flex-direction: column;
+                    .aboutUs-card {
+                        max-width: 700px;
+                            img {
+                                width: 180px;
+                            }
+                            h3 {
+                                font-size: 23px;
+                            }
+                            span {
+                                font-size: 15px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                    }
+            }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .aboutUs-container {
+            .aboutUs-title {
+                gap: 20px;
+                    h1 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+            }
+            .aboutUs-cards-container {
+                flex-direction: column;
+                width: 100%;
+                padding: 20px;
+                    .aboutUs-card {
+                        max-width: 800px;
+                        padding: 20px 30px;
+                            img {
+                                width: 150px;
+                            }
+                            h3 {
+                                font-size: 20px;
+                            }
+                            span {
+                                font-size: 15px;
+                            }
+                            p {
+                                font-size: 16px;
+                            }
+                    }
+            }
+    }
+}
