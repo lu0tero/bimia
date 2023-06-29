@@ -65,11 +65,13 @@
                         border: 1px solid #05106D;
                         background-color: transparent;
                         padding: 20px 60px;
+                        transition: ease-in-out 0.4s;
 
                         &:hover {
                             cursor: pointer;
-                            background-color: #05106D;
+                            background-color: #161f70;
                             color: white;
+                            transition: ease-in-out 0.4s;
                         }
                     }
                 }
