@@ -80,6 +80,9 @@ header #burger-menu {
   header .contact-btn {
     display: none;
   }
+  header .contact-btn-active {
+    display: none;
+  }
   header .logo {
     font-size: 22px;
     font-weight: 700;
@@ -415,8 +418,6 @@ header #burger-menu {
 }
 /* Contacto */
 .contact-body {
-  /* background: $index-gradient;
-  background-repeat: no-repeat; */
   background-color: #001d2c;
   position: relative;
   width: 100%;
@@ -430,17 +431,10 @@ header #burger-menu {
   align-items: center;
   font-family: "Noto Sans", sans-serif;
 }
-.contact-body .contact-section .contact-lines {
-  position: absolute;
-  z-index: -1;
-  mix-blend-mode: overlay;
-  width: 100%;
-  height: 80%;
-}
 .contact-body .contact-section .form-container {
   background-color: #F8F8F8;
   padding: 20px 50px;
-  width: 80%;
+  width: 95%;
   margin: 70px;
 }
 .contact-body .contact-section .form-container .form-info {
@@ -544,8 +538,8 @@ header #burger-menu {
     padding-bottom: 220px;
   }
   .contact-body .contact-section .form-container {
-    padding: 15px 40px;
-    width: 80%;
+    padding: 20px 30px;
+    width: 90%;
   }
   .contact-body .contact-section .form-container .form-info h2 {
     font-size: 35px;
@@ -589,6 +583,64 @@ header #burger-menu {
     width: 100%;
     height: 100%;
   }
+  .contact-body .contact-section .form-container form .textarea-container .submit-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-body .contact-section .form-container {
+    padding: 20px 20px;
+    width: 95%;
+  }
+  .contact-body .contact-section .form-container .form-info h2 {
+    font-size: 30px;
+  }
+  .contact-body .contact-section .form-container .form-info p {
+    font-size: 20px;
+  }
+  .contact-body .contact-section .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-body .contact-section .form-container form .inputs-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 0;
+    height: 100%;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div label {
+    font-size: 18px;
+  }
+  .contact-body .contact-section .form-container form .inputs-container .input-div input {
+    font-size: 18px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container textarea {
+    width: 100%;
+    height: 150px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container .submit-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-body .contact-section .form-container form .textarea-container .submit-container button {
+    height: 55px;
+    font-size: 20px;
+  }
 }
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
   .contact-body {
@@ -596,7 +648,7 @@ header #burger-menu {
   }
   .contact-body .contact-section .form-container {
     padding: 15px 40px;
-    width: 80%;
+    width: 95%;
   }
   .contact-body .contact-section .form-container .form-info h2 {
     font-size: 55px;
@@ -804,6 +856,7 @@ header #burger-menu {
   gap: 20px;
   padding: 20px;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.5s;
 }
 .work-body .outstanding-section .outstanding-cards-container .outstanding-card:hover {
   transform: scale(1.02);

@@ -1,6 +1,4 @@
 .contact-body {
-    /* background: $index-gradient;
-    background-repeat: no-repeat; */
     background-color: #001d2c;
     position: relative;
     width: 100%;
@@ -12,17 +10,10 @@
             justify-content: center;
             align-items: center;
             font-family: $noto-font;
-                .contact-lines {
-                    position: absolute;
-                    z-index: -1;
-                    mix-blend-mode: overlay;
-                    width: 100%;
-                    height: 80%;
-                }
                 .form-container {
                     background-color: #F8F8F8;
                     padding: 20px 50px;
-                    width: 80%;
+                    width: 95%;
                     margin: 70px;  
                     
                         .form-info {
@@ -124,13 +115,14 @@
         }
 }
 
+
 @media only screen and (max-width: 700px) {
     .contact-body {
         padding-bottom: 220px;
             .contact-section {
                     .form-container {
-                        padding: 15px 40px;
-                        width: 80%;
+                        padding: 20px 30px;
+                        width: 90%;
                             .form-info {
                                     h2 {
                                         font-size: 35px;
@@ -173,6 +165,10 @@
                                                 width: 100%;
                                                 height: 100%;
                                             }
+                                            .submit-container {
+                                                padding-top: 20px;
+                                                padding-bottom: 20px;
+                                            }
                                     }
                             }
                     }
@@ -181,13 +177,76 @@
     
 }
 
+@media only screen and (max-width: 480px) {
+    .contact-body {
+            .contact-section {
+                    .form-container {
+                        padding: 20px 20px;
+                        width: 95%;
+                            .form-info {
+                                    h2 {
+                                        font-size: 30px;
+                                    }
+                                    p {
+                                        font-size: 20px;
+                                    }
+                            }       
+                            form {
+                                display: flex;
+                                flex-direction: column;
+                                    .inputs-container {
+                                        width: 100%;
+                                        flex-direction: column;
+                                        gap: 20px;
+                                        padding: 25px 0;
+                                        height: 100%;
+                                            .input-div {
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                    label {
+                                                        font-size: 18px;
+                                                    }
+                                                    input {
+                                                        font-size: 18px;
+                                                    }                               
+                                            }
+                                    }
+                                    .textarea-container {
+                                        display: flex;
+                                        position: initial;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                            textarea {
+                                                width: 100%;
+                                                height: 150px;
+                                            }
+                                            .submit-container {
+                                                display: flex;
+                                                width: 100%;
+                                                justify-content: flex-end;
+                                                padding-top: 20px;
+                                                padding-bottom: 20px;
+                                                    button {
+                                                        height: 55px;
+                                                        font-size: 20px;
+                                                    }
+                                            }
+                                    }
+                                    
+                            }
+                    }
+            }
+    }
+}
+
+
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
     .contact-body {
         padding-bottom: 160px;
         .contact-section {
                 .form-container {
                     padding: 15px 40px;
-                    width: 80%;
+                    width: 95%;
                         .form-info {
                                 h2 {
                                     font-size: 55px;
