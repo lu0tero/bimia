@@ -19,7 +19,9 @@ header {
                 .home-li {
                     display: none;
                 }
-
+                .home-li-active {
+                    display: none;
+                }
                 .blog-li {
                     color: #76adfb;
                 }
@@ -104,6 +106,17 @@ header {
                 flex-direction: column;
                     .home-li {
                         display: block;
+                    }
+
+                    .home-li-active {
+                        
+                        &::after {
+                            content: '';
+                            display: block;
+                            border-bottom: 2px solid #2251FF;
+                            width: 60px;
+                            margin: 10px auto;
+                        }
                     }
             }
             .logo {
