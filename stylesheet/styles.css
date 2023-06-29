@@ -32,6 +32,9 @@ header {
 header .logo {
   font-family: "Times New Roman", Times, serif;
 }
+header .logo:hover {
+  cursor: pointer;
+}
 header .nav-list {
   display: flex;
   gap: 20px;
@@ -51,6 +54,16 @@ header .contact-btn {
   border: 1px solid white;
   color: white;
   font-weight: 400;
+}
+header .contact-btn-active {
+  background-color: #2251FF;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+}
+header .contact-btn-active:hover {
+  cursor: pointer;
 }
 header #burger-menu {
   display: none;
@@ -239,6 +252,7 @@ footer .footer-info-div span {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-top: 30px;
 }
 .index-body .index-main .robot-image-container .robot-image-lp {
   display: none;
@@ -282,6 +296,11 @@ footer .footer-info-div span {
   border: 1px solid #05106D;
   background-color: transparent;
   padding: 20px 60px;
+}
+.index-body .index-main .info-container .info .conocer-mas-container .conocer-mas:hover {
+  cursor: pointer;
+  background-color: #05106D;
+  color: white;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -450,7 +469,7 @@ footer .footer-info-div span {
   background-color: #F8F8F8;
   padding: 20px 50px;
   width: 80%;
-  margin-top: 70px;
+  margin: 70px;
 }
 .contact-body .contact-section .form-container .form-info {
   display: flex;
@@ -536,6 +555,7 @@ footer .footer-info-div span {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  padding-top: 20px;
 }
 .contact-body .contact-section .form-container form .textarea-container .submit-container button {
   border-radius: 3px;
@@ -812,6 +832,10 @@ footer .footer-info-div span {
   gap: 20px;
   padding: 20px;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
+}
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.5s;
 }
 .work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
   width: 100%;

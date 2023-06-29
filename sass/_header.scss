@@ -7,6 +7,9 @@ header {
     color: white;
         .logo {
             font-family: 'Times New Roman', Times, serif;
+            &:hover {
+                cursor: pointer;
+            }
         }
         .nav-list {
             display: flex;
@@ -27,6 +30,17 @@ header {
             border: 1px solid white;
             color: white;
             font-weight: 400;
+        }
+
+        .contact-btn-active {
+            background-color: #2251FF;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            &:hover {
+                cursor: pointer;
+            }
         }
         #burger-menu {
             display: none;
