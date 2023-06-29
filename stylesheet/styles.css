@@ -32,6 +32,9 @@ header {
 header .logo {
   font-family: "Times New Roman", Times, serif;
 }
+header .logo:hover {
+  cursor: pointer;
+}
 header .nav-list {
   display: flex;
   gap: 20px;
@@ -51,6 +54,16 @@ header .contact-btn {
   border: 1px solid white;
   color: white;
   font-weight: 400;
+}
+header .contact-btn-active {
+  background-color: #2251FF;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+}
+header .contact-btn-active:hover {
+  cursor: pointer;
 }
 header #burger-menu {
   display: none;
@@ -211,6 +224,7 @@ header #burger-menu {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-top: 30px;
 }
 .index-body .index-main .robot-image-container .robot-image-lp {
   display: none;
@@ -254,6 +268,11 @@ header #burger-menu {
   border: 1px solid #05106D;
   background-color: transparent;
   padding: 20px 60px;
+}
+.index-body .index-main .info-container .info .conocer-mas-container .conocer-mas:hover {
+  cursor: pointer;
+  background-color: #05106D;
+  color: white;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -422,7 +441,7 @@ header #burger-menu {
   background-color: #F8F8F8;
   padding: 20px 50px;
   width: 80%;
-  margin-top: 70px;
+  margin: 70px;
 }
 .contact-body .contact-section .form-container .form-info {
   display: flex;
@@ -508,6 +527,7 @@ header #burger-menu {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  padding-top: 20px;
 }
 .contact-body .contact-section .form-container form .textarea-container .submit-container button {
   border-radius: 3px;
@@ -785,6 +805,10 @@ header #burger-menu {
   padding: 20px;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
 }
+.work-body .outstanding-section .outstanding-cards-container .outstanding-card:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.5s;
+}
 .work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
   width: 100%;
   height: auto;
@@ -973,5 +997,80 @@ footer .footer-info-div span {
   }
 }
 /* Terminos y poltica */
+.terms-main {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f3f3f3;
+  padding-left: 20px;
+}
+.terms-main .bimia {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  padding: 25px;
+}
+.terms-main .terms-image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.terms-main .terms-image-container img {
+  width: 43%;
+}
+.terms-main .terms-image-container .hero-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.terms-main .terms-image-container .hero-info span {
+  color: #2251FF;
+}
+.terms-main h1 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.terms-main .title-section {
+  text-align: justify;
+  padding-left: 20px;
+  width: 80%;
+}
+.terms-main .title-section .title {
+  padding: 20px 0;
+  font-size: 25px;
+}
+.terms-main .title-section .date {
+  font-weight: 500;
+  font-size: 14px;
+}
+.terms-main .title-section .intro-section {
+  padding-bottom: 20px;
+}
+.terms-main .title-section .number-title {
+  margin-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  color: #2251FF;
+}
+.terms-main .title-section .number-items {
+  padding: 10px 0;
+}
+.terms-main .title-section .bullet-list {
+  list-style: disc;
+  padding-left: 50px;
+}
+.terms-main .title-section .bullet-list .bullet-list-item {
+  padding-bottom: 10px;
+}
+.terms-main .title-section .cookies-span {
+  font-weight: 500;
+}
+.terms-main .title-section .email {
+  color: #2251FF;
+}
+.terms-main .title-section .actualizado {
+  font-size: 14px;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=styles.css.map */
