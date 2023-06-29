@@ -19,8 +19,22 @@ header {
                 .home-li {
                     display: none;
                 }
+
+                .blog-li {
+                    color: #76adfb;
+                }
                 .section-li {
                     list-style-type: none;
+                }
+
+                .section-li-active {
+                    &::after {
+                        content: '';
+                        display: block;
+                        border-bottom: 2px solid #2251FF;
+                        width: 60px;
+                        margin: 10px auto;
+                    }
                 }
         }
         .contact-btn {
