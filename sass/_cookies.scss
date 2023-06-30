@@ -68,3 +68,59 @@
 .cookies-card.active {
     display: flex;
 }
+
+@media only screen and (max-width: 720px) {
+    .cookies-card {
+        .cookies-img {
+            right: 20px;
+            width: 85px;
+        }
+        .cookies-info-container {
+            gap: 10px;
+            .cookies-title {
+                font-size: 18px;
+            }
+            .cookies-info {
+                font-size: 16px;
+            }
+            .cookies-btn-container {
+                gap: 10px;
+                .cookies-btn {
+                    font-size: 15px;
+                }
+                .cookies-link {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cookies-card {
+        .cookies-img {
+            right: 20px;
+            width: 75px;
+        }
+        .cookies-info-container {
+            gap: 10px;
+            .cookies-title {
+                font-size: 16px;
+            }
+            .cookies-info {
+                font-size: 14px;
+            }
+            .cookies-btn-container {
+                gap: 10px;
+                .cookies-btn {
+                    font-size: 13px;
+                }
+                .cookies-link {
+                    font-size: 13px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

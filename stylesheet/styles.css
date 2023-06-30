@@ -37,9 +37,19 @@ header .logo:hover {
 }
 header .nav-list {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   font-size: 18px;
   font-weight: 400;
+  /* .section-li-active {
+      &::after {
+          content: '';
+          display: block;
+          border-bottom: 2px solid #2251FF;
+          width: 50px;
+      }
+  } */
 }
 header .nav-list .home-li {
   display: none;
@@ -52,13 +62,6 @@ header .nav-list .blog-li {
 }
 header .nav-list .section-li {
   list-style-type: none;
-}
-header .nav-list .section-li-active::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #2251FF;
-  width: 60px;
-  margin: 10px auto;
 }
 header .contact-btn {
   padding: 15px;
@@ -227,6 +230,56 @@ header #burger-menu {
   display: flex;
 }
 
+@media only screen and (max-width: 720px) {
+  .cookies-card .cookies-img {
+    right: 20px;
+    width: 85px;
+  }
+  .cookies-card .cookies-info-container {
+    gap: 10px;
+  }
+  .cookies-card .cookies-info-container .cookies-title {
+    font-size: 18px;
+  }
+  .cookies-card .cookies-info-container .cookies-info {
+    font-size: 16px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container {
+    gap: 10px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container .cookies-btn {
+    font-size: 15px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container .cookies-link {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .cookies-card .cookies-img {
+    right: 20px;
+    width: 75px;
+  }
+  .cookies-card .cookies-info-container {
+    gap: 10px;
+  }
+  .cookies-card .cookies-info-container .cookies-title {
+    font-size: 16px;
+  }
+  .cookies-card .cookies-info-container .cookies-info {
+    font-size: 14px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container {
+    gap: 10px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container .cookies-btn {
+    font-size: 13px;
+  }
+  .cookies-card .cookies-info-container .cookies-btn-container .cookies-link {
+    font-size: 13px;
+    text-align: center;
+  }
+}
 /* Home */
 .index-body {
   background: linear-gradient(135deg, #051c2c 60%, #03339c 100%);
@@ -417,6 +470,7 @@ header #burger-menu {
     bottom: 0;
     left: 0;
     object-fit: cover;
+    height: 80%;
   }
   .index-body .index-main .info-container {
     position: absolute;
