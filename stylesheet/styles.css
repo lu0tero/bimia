@@ -59,6 +59,7 @@ header .nav-list .home-li-active {
 }
 header .nav-list .blog-li {
   color: #76adfb;
+  cursor: pointer;
 }
 header .nav-list .section-li {
   list-style-type: none;
