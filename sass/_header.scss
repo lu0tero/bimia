@@ -24,22 +24,13 @@ header {
                 .home-li-active {
                     display: none;
                 }
-                .blog-li {
-                    color: #76adfb;
-                    cursor: pointer;
-                }
                 .section-li {
                     list-style-type: none;
                 }
 
-                /* .section-li-active {
-                    &::after {
-                        content: '';
-                        display: block;
-                        border-bottom: 2px solid #2251FF;
-                        width: 50px;
-                    }
-                } */
+                .section-li-active {
+                    color: #76adfb;
+                } 
         }
         .contact-btn {
             padding: 15px;
@@ -108,17 +99,6 @@ header {
                 flex-direction: column;
                     .home-li {
                         display: block;
-                    }
-
-                    .home-li-active {
-                        
-                        &::after {
-                            content: '';
-                            display: block;
-                            border-bottom: 2px solid #2251FF;
-                            width: 60px;
-                            margin: 10px auto;
-                        }
                     }
             }
             .logo {
