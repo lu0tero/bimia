@@ -5,10 +5,10 @@
             flex-direction: column;
             justify-content: space-around;
             gap: 20px;
-            padding: 40px 20px;
+            padding: 50px 20px;
                 h1 {
                     font-family: $catamaran;
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: 700;
                     text-transform: uppercase;
                 }
@@ -16,7 +16,7 @@
                     border: 1px solid black;
                 }
                 p {
-                    font-size: 22px;
+                    font-size: 20px;
                     font-weight: 400;
                     text-align: justify;
                 }
@@ -61,10 +61,10 @@
             .aboutUs-title {
                 gap: 20px;
                     h1 {
-                        font-size: 22px;
+                        font-size: 20px;
                     }
                     p {
-                        font-size: 20px;
+                        font-size: 18px;
                     }
             }
             .aboutUs-cards-container {

@@ -3,7 +3,7 @@ footer {
     font-family: $noto-font;
     border: 1px solid #D3D3D3;
     width: 100%;
-    padding: 40px;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -12,7 +12,7 @@ footer {
         justify-content: space-between;
         width: 100%;
             span {
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 400;
                 width: 40%;
             }
@@ -35,8 +35,26 @@ footer {
     footer {
         padding: 20px;
         .footer-info-div {
-                span {
-                    font-size: 15px;
+                .copyright {
+                    font-size: 13px;
+                }
+                .terms {
+                    font-size: 13px;
+                }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 350px) {
+    footer {
+        padding: 10px;
+        .footer-info-div {
+                .copyright {
+                    font-size: 12px;
+                }
+                .terms {
+                    font-size: 12px;
                 }
         }
     }

@@ -15,7 +15,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                margin-top: 30px;
+                margin-top: 20px;
             }
             .robot-image-lp {
                 display: none;
@@ -38,18 +38,18 @@
 
             .info {
                 .estas-en {
-                    font-size: 25px;
+                    font-size: 20px;
                 }
                 
                 .bimia-consulting {
-                    font-size: 80px;
+                    font-size: 65px;
                     font-family: $catamaran;
                     font-weight: 700;
                     line-height: 1.1;
                 }
 
                 p {
-                    font-size: 25px;
+                    font-size: 20px;
                     padding: 20px 0;
                 }
             
@@ -58,13 +58,13 @@
                     justify-content: flex-end;
     
                     .conocer-mas {
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 600;
                         font-family: $noto-font;
                         color: #05106D;
                         border: 1px solid #05106D;
                         background-color: transparent;
-                        padding: 20px 60px;
+                        padding: 20px 50px;
                         transition: ease-in-out 0.4s;
 
                         &:hover {
@@ -97,9 +97,8 @@
                     display: block;
                     width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -100px;
                     left: 0;
-                    object-fit: cover;
                 }
                 .robot-image-tb {
                     display: none;
@@ -121,11 +120,11 @@
                     }
 
                     .bimia-consulting {
-                        font-size: 60px;
+                        font-size: 50px;
                     }
 
                     p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding-bottom: 50px;
                     }
                 
@@ -170,7 +169,7 @@
                     display: block;
                     width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -70px;
                     left: 0;
                     object-fit: cover;
                 }
@@ -189,11 +188,11 @@
                     }
                     
                     .bimia-consulting {
-                        font-size: 60px;
+                        font-size: 50px;
                     }
     
                     p {
-                        font-size: 20px;
+                        font-size: 18px;
                         padding: 20px 0;
                         padding-bottom: 50px;
                     }
@@ -238,10 +237,10 @@
                     display: block;
                     width: 100%;
                     position: absolute;
-                    bottom: 0;
+                    bottom: -30px;
                     left: 0;
                     object-fit: cover;
-                    height: 80%;
+                    height: 100%;
                 }
 
             }

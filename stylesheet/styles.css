@@ -285,7 +285,7 @@ header #burger-menu {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .index-body .index-main .robot-image-container .robot-image-lp {
   display: none;
@@ -305,16 +305,16 @@ header #burger-menu {
   z-index: 1;
 }
 .index-body .index-main .info-container .info .estas-en {
-  font-size: 25px;
+  font-size: 20px;
 }
 .index-body .index-main .info-container .info .bimia-consulting {
-  font-size: 80px;
+  font-size: 65px;
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
   line-height: 1.1;
 }
 .index-body .index-main .info-container .info p {
-  font-size: 25px;
+  font-size: 20px;
   padding: 20px 0;
 }
 .index-body .index-main .info-container .info .conocer-mas-container {
@@ -322,13 +322,13 @@ header #burger-menu {
   justify-content: flex-end;
 }
 .index-body .index-main .info-container .info .conocer-mas-container .conocer-mas {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   font-family: "Noto Sans", sans-serif;
   color: #05106D;
   border: 1px solid #05106D;
   background-color: transparent;
-  padding: 20px 60px;
+  padding: 20px 50px;
   transition: ease-in-out 0.4s;
 }
 .index-body .index-main .info-container .info .conocer-mas-container .conocer-mas:hover {
@@ -351,9 +351,8 @@ header #burger-menu {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     left: 0;
-    object-fit: cover;
   }
   .index-body .index-main .robot-image-container .robot-image-tb {
     display: none;
@@ -371,10 +370,10 @@ header #burger-menu {
     font-size: 18px;
   }
   .index-body .index-main .info-container .info .bimia-consulting {
-    font-size: 60px;
+    font-size: 50px;
   }
   .index-body .index-main .info-container .info p {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 50px;
   }
   .index-body .index-main .info-container .info .conocer-mas-container {
@@ -403,7 +402,7 @@ header #burger-menu {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -70px;
     left: 0;
     object-fit: cover;
   }
@@ -417,10 +416,10 @@ header #burger-menu {
     font-size: 18px;
   }
   .index-body .index-main .info-container .info .bimia-consulting {
-    font-size: 60px;
+    font-size: 50px;
   }
   .index-body .index-main .info-container .info p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px 0;
     padding-bottom: 50px;
   }
@@ -452,10 +451,10 @@ header #burger-menu {
     display: block;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -30px;
     left: 0;
     object-fit: cover;
-    height: 80%;
+    height: 100%;
   }
   .index-body .index-main .info-container {
     position: absolute;
@@ -763,11 +762,11 @@ header #burger-menu {
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 .aboutUs-container .aboutUs-title h1 {
   font-family: "Catamaran", sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -775,7 +774,7 @@ header #burger-menu {
   border: 1px solid black;
 }
 .aboutUs-container .aboutUs-title p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
   text-align: justify;
 }
@@ -818,10 +817,10 @@ header #burger-menu {
     gap: 20px;
   }
   .aboutUs-container .aboutUs-title h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .aboutUs-container .aboutUs-title p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .aboutUs-container .aboutUs-cards-container {
     flex-direction: column;
@@ -1110,14 +1109,14 @@ header #burger-menu {
     flex-direction: row;
   }
   .work-body .work-main .work-section .work-info h1 {
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     width: 100%;
   }
   .work-body .work-main .work-section .work-info p {
     font-weight: 300;
     line-height: 30px;
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
   }
   .work-body .outstanding-section .outstanding-cards-container {
@@ -1159,7 +1158,7 @@ footer {
   font-family: "Noto Sans", sans-serif;
   border: 1px solid #D3D3D3;
   width: 100%;
-  padding: 40px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -1170,7 +1169,7 @@ footer .footer-info-div {
   width: 100%;
 }
 footer .footer-info-div span {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   width: 40%;
 }
@@ -1185,8 +1184,22 @@ footer .footer-info-div span {
   footer {
     padding: 20px;
   }
-  footer .footer-info-div span {
-    font-size: 15px;
+  footer .footer-info-div .copyright {
+    font-size: 13px;
+  }
+  footer .footer-info-div .terms {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  footer {
+    padding: 10px;
+  }
+  footer .footer-info-div .copyright {
+    font-size: 12px;
+  }
+  footer .footer-info-div .terms {
+    font-size: 12px;
   }
 }
 /* Terminos y poltica */
