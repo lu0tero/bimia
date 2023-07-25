@@ -51,30 +51,9 @@
                 p {
                     font-size: 20px;
                     padding: 20px 0;
+                    width: 95%;
                 }
             
-                .conocer-mas-container {
-                    display: flex;
-                    justify-content: flex-end;
-    
-                    .conocer-mas {
-                        font-size: 18px;
-                        font-weight: 600;
-                        font-family: $noto-font;
-                        color: #05106D;
-                        border: 1px solid #05106D;
-                        background-color: transparent;
-                        padding: 20px 50px;
-                        transition: ease-in-out 0.4s;
-
-                        &:hover {
-                            cursor: pointer;
-                            background-color: #161f70;
-                            color: white;
-                            transition: ease-in-out 0.4s;
-                        }
-                    }
-                }
             }
 
             
@@ -181,20 +160,22 @@
                 height: 90%;
                 width: 95%;
                 left: 20px;
-    
+                padding: 0 20px;
+
                 .info {
                     .estas-en {
                         font-size: 18px;
                     }
                     
                     .bimia-consulting {
-                        font-size: 50px;
+                        font-size: 45px;
                     }
     
                     p {
                         font-size: 18px;
                         padding: 20px 0;
                         padding-bottom: 50px;
+                        width: 95%;
                     }
                 
                     .conocer-mas-container {
@@ -253,15 +234,15 @@
     
                 .info {
                     .estas-en {
-                        font-size: 15px;
+                        font-size: 14px;
                     }
                     
                     .bimia-consulting {
-                        font-size: 43px;
+                        font-size: 30px;
                     }
     
                     p {
-                        font-size: 17.5px;
+                        font-size: 14px;
                         padding: 10px 0;
                     }
                 

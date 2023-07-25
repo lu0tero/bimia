@@ -25,7 +25,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 60px;
+  padding: 15px 40px;
   font-family: "Noto Sans", sans-serif;
   color: white;
 }
@@ -37,9 +37,8 @@ header .logo:hover {
 }
 header .nav-list {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 70px;
   font-size: 18px;
   font-weight: 400;
 }
@@ -77,7 +76,7 @@ header #burger-menu {
   display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   header {
     padding: 10px 20px;
     flex-direction: row-reverse;
@@ -316,26 +315,7 @@ header #burger-menu {
 .index-body .index-main .info-container .info p {
   font-size: 20px;
   padding: 20px 0;
-}
-.index-body .index-main .info-container .info .conocer-mas-container {
-  display: flex;
-  justify-content: flex-end;
-}
-.index-body .index-main .info-container .info .conocer-mas-container .conocer-mas {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Noto Sans", sans-serif;
-  color: #05106D;
-  border: 1px solid #05106D;
-  background-color: transparent;
-  padding: 20px 50px;
-  transition: ease-in-out 0.4s;
-}
-.index-body .index-main .info-container .info .conocer-mas-container .conocer-mas:hover {
-  cursor: pointer;
-  background-color: #161f70;
-  color: white;
-  transition: ease-in-out 0.4s;
+  width: 95%;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -411,17 +391,19 @@ header #burger-menu {
     height: 90%;
     width: 95%;
     left: 20px;
+    padding: 0 20px;
   }
   .index-body .index-main .info-container .info .estas-en {
     font-size: 18px;
   }
   .index-body .index-main .info-container .info .bimia-consulting {
-    font-size: 50px;
+    font-size: 45px;
   }
   .index-body .index-main .info-container .info p {
     font-size: 18px;
     padding: 20px 0;
     padding-bottom: 50px;
+    width: 95%;
   }
   .index-body .index-main .info-container .info .conocer-mas-container {
     display: flex;
@@ -463,13 +445,13 @@ header #burger-menu {
     left: 15px;
   }
   .index-body .index-main .info-container .info .estas-en {
-    font-size: 15px;
+    font-size: 14px;
   }
   .index-body .index-main .info-container .info .bimia-consulting {
-    font-size: 43px;
+    font-size: 30px;
   }
   .index-body .index-main .info-container .info p {
-    font-size: 17.5px;
+    font-size: 14px;
     padding: 10px 0;
   }
   .index-body .index-main .info-container .info .conocer-mas-container {
@@ -494,7 +476,7 @@ header #burger-menu {
 .contact-body .contact-section .form-container {
   background-color: #F8F8F8;
   padding: 20px 50px;
-  width: 95%;
+  width: 80%;
   margin: 70px;
 }
 .contact-body .contact-section .form-container .form-info {
@@ -503,7 +485,7 @@ header #burger-menu {
   width: 100%;
 }
 .contact-body .contact-section .form-container .form-info h2 {
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 700;
   font-family: "Catamaran", sans-serif;
   color: #1E1E1E;
@@ -512,7 +494,7 @@ header #burger-menu {
   color: black;
 }
 .contact-body .contact-section .form-container .form-info p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   width: 50%;
   padding-bottom: 30px;
@@ -538,7 +520,7 @@ header #burger-menu {
   gap: 20px;
 }
 .contact-body .contact-section .form-container form .inputs-container .input-div label {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
   width: 18%;
 }
@@ -547,7 +529,7 @@ header #burger-menu {
   border: none;
   background-color: #F4F4F4;
   border-bottom: 2px solid #2251FF;
-  font-size: 25px;
+  font-size: 20px;
   outline: none;
   padding: 10px;
 }
@@ -572,7 +554,7 @@ header #burger-menu {
   padding: 10px 20px;
   border: none;
   border-bottom: 2px solid #2251FF;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   background-color: #F4F4F4;
   resize: none;
@@ -585,9 +567,9 @@ header #burger-menu {
 }
 .contact-body .contact-section .form-container form .textarea-container .submit-container button {
   border-radius: 3px;
-  height: 75px;
+  height: 60px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   width: 50%;
   background-color: #2251FF;
@@ -708,7 +690,7 @@ header #burger-menu {
   }
   .contact-body .contact-section .form-container {
     padding: 15px 40px;
-    width: 95%;
+    width: 80%;
   }
   .contact-body .contact-section .form-container .form-info h2 {
     font-size: 55px;
@@ -722,6 +704,7 @@ header #burger-menu {
   .contact-body .contact-section .form-container form {
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
   }
   .contact-body .contact-section .form-container form .inputs-container {
     width: 100%;
@@ -752,6 +735,11 @@ header #burger-menu {
     width: 100%;
     height: 100%;
   }
+  .contact-body .contact-section .form-container form .textarea-container .submit-container button {
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+  }
 }
 /* Quienes somos */
 .aboutUs-container {
@@ -762,7 +750,7 @@ header #burger-menu {
   flex-direction: column;
   justify-content: space-around;
   gap: 20px;
-  padding: 50px 20px;
+  padding: 70px 40px;
 }
 .aboutUs-container .aboutUs-title h1 {
   font-family: "Catamaran", sans-serif;
@@ -774,7 +762,7 @@ header #burger-menu {
   border: 1px solid black;
 }
 .aboutUs-container .aboutUs-title p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   text-align: justify;
 }
@@ -783,8 +771,8 @@ header #burger-menu {
   justify-content: center;
   align-items: center;
   background-color: #EFEFEF;
-  padding: 35px 50px;
-  gap: 20px;
+  padding: 70px 50px;
+  gap: 50px;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card {
   display: flex;
@@ -794,13 +782,16 @@ header #burger-menu {
   gap: 10px;
   background-color: white;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
-  padding: 25px 50px;
-  max-width: 450px;
+  padding: 50px 30px;
+  max-width: 350px;
+}
+.aboutUs-container .aboutUs-cards-container .aboutUs-card img {
+  width: 40%;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
   font-family: "Catamaran", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
   font-size: 18px;
@@ -808,8 +799,8 @@ header #burger-menu {
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
   font-weight: 500;
-  font-size: 18px;
-  text-align: justify;
+  font-size: 15px;
+  text-align: left;
 }
 
 @media only screen and (max-width: 800px) {
@@ -909,6 +900,7 @@ header #burger-menu {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 30px;
 }
 .work-body .work-main .work-section {
   display: flex;
@@ -946,7 +938,7 @@ header #burger-menu {
 .work-body .outstanding-section .outstanding-title {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 .work-body .outstanding-section .outstanding-title span {
   width: 100%;
@@ -961,43 +953,59 @@ header #burger-menu {
 }
 .work-body .outstanding-section .outstanding-cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  padding: 40px;
+  padding: 40px 0;
+  padding-bottom: 120px;
   gap: 40px;
 }
-.work-body .outstanding-section .outstanding-cards-container .outstanding-card {
-  flex: 1;
+.work-body .outstanding-section .outstanding-cards-container .cards-container {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 700px;
+  gap: 50px;
+  justify-content: center;
+}
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card {
+  width: 25%;
   display: flex;
   flex-direction: column;
+  align-self: stretch;
   gap: 20px;
   padding: 20px;
   box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
   transition: ease-in-out 0.5s;
 }
-.work-body .outstanding-section .outstanding-cards-container .outstanding-card:hover {
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card:hover {
   transform: scale(1.02);
   transition: ease-in-out 0.5s;
 }
-.work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container {
   width: 100%;
+}
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container img {
+  width: 100%;
+  background-color: violet;
   height: auto;
   border-radius: 5px;
 }
-.work-body .outstanding-section .outstanding-cards-container .outstanding-card h3 {
-  font-weight: 600;
-  font-size: 26px;
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
-  text-align: justify;
-  font-weight: 400;
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container h3 {
+  font-weight: 700;
   font-size: 20px;
+}
+.work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
   height: auto;
   width: auto;
-  padding: 5px 10px;
-  line-height: 30px;
+  padding: 5px 0px;
+  line-height: 23px;
 }
 
 /* MEDIA QUERIES */
@@ -1035,19 +1043,127 @@ header #burger-menu {
   .work-body .outstanding-section .outstanding-cards-container {
     flex-direction: column;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 50%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card {
     flex-direction: column;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container img {
     width: 100%;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card h3 {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container h3 {
     font-weight: 600;
     font-size: 20px;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
     font-size: 16px;
     padding: 5px 0px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .work-body .work-main {
+    flex-direction: column;
+    height: 70%;
+    padding: 10px 0;
+  }
+  .work-body .work-main .work-section {
+    flex-direction: row;
+  }
+  .work-body .work-main .work-section .work-info {
+    padding: 0;
+  }
+  .work-body .work-main .work-section .work-info h1 {
+    font-size: 22px;
+    font-weight: 700;
+    width: 100%;
+  }
+  .work-body .work-main .work-section .work-info p {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .work-body .outstanding-section {
+    background-color: white;
+    font-family: "Noto Sans", sans-serif;
+  }
+  .work-body .outstanding-section .outstanding-title h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .work-body .outstanding-section .outstanding-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container img {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container h3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
+    font-size: 14px;
+    padding: 5px 0px;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  .work-body .outstanding-section .outstanding-title h3 {
+    font-size: 20px;
+  }
+  .work-body .outstanding-section .outstanding-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container img {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container h3 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
+    font-size: 14px;
+    padding: 5px 0px;
+    font-weight: 500;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 1024px) {
@@ -1079,22 +1195,34 @@ header #burger-menu {
     font-weight: 700;
   }
   .work-body .outstanding-section .outstanding-cards-container {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container {
+    display: flex;
     flex-direction: column;
-    width: 80%;
+    gap: 30px;
+    width: 70%;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card h3 {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container img {
+    width: 100%;
+  }
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container h3 {
     font-weight: 600;
     font-size: 30px;
   }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
+  .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
     font-size: 20px;
     padding: 5px 0px;
   }
@@ -1119,25 +1247,8 @@ header #burger-menu {
     font-size: 18px;
     text-align: justify;
   }
-  .work-body .outstanding-section .outstanding-cards-container {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card {
-    flex-direction: column;
-    width: 70%;
-  }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card img {
-    width: 100%;
-  }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card h3 {
-    font-weight: 600;
-    font-size: 30px;
-  }
-  .work-body .outstanding-section .outstanding-cards-container .outstanding-card p {
-    font-size: 20px;
-    padding: 5px 0px;
+  .work-body .outstanding-section .cards-container {
+    width: 60%;
   }
 }
 /* Blog */

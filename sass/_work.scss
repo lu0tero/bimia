@@ -6,6 +6,7 @@
             justify-content: center;
             align-items: center;
             height: 100%;
+            margin: 30px;
                 .work-section {
                     display: flex;
                     justify-content: center;
@@ -43,7 +44,7 @@
                 .outstanding-title {
                     display: flex;
                     flex-direction: column;
-                    padding: 40px;
+                    padding: 40px 40px 10px 40px;
                         span {
                             width: 100%;
                             border: 0.5px solid black;
@@ -59,42 +60,59 @@
                 
                 .outstanding-cards-container {
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: flex-start;
-                    padding: 40px;
+                    padding: 40px 0;
+                    padding-bottom: 120px;
                     gap: 40px;
-                        .outstanding-card {
-                            flex: 1;
-                            width: 100%;
-                            height: 700px;
+                        .cards-container {
                             display: flex;
-                            flex-direction: column;
-                            gap: 20px;
-                            padding: 20px;
-                            box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
-                            transition: ease-in-out 0.5s;
-                            &:hover {
-                                transform: scale(1.02);
+                            flex-direction: row;
+                            width: 100%;
+                            gap: 50px;
+                            justify-content: center;
+
+                            .outstanding-card {
+                                width: 25%;
+                                display: flex;
+                                flex-direction: column;
+                                align-self: stretch;
+                                gap: 20px;
+                                padding: 20px;
+                                box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
                                 transition: ease-in-out 0.5s;
-                            }
-                                img {
-                                    width: 100%;
-                                    height: auto;
-                                    border-radius: 5px;
+                                &:hover {
+                                    transform: scale(1.02);
+                                    transition: ease-in-out 0.5s;
                                 }
-                                h3 {
-                                    font-weight: 600;
-                                    font-size: 26px;
-                                }
-                                p {
-                                    text-align: justify;
-                                    font-weight: 400;
-                                    font-size: 20px;
-                                    height: auto;
-                                    width: auto;
-                                    padding: 5px 10px;
-                                    line-height: 30px;
-                                }
+                                    .card-image-container {
+                                        width: 100%;
+                                        img {
+                                            width: 100%;
+                                            background-color: violet;
+                                            height: auto;
+                                            border-radius: 5px;
+                                        }
+                                    }
+                                    .card-content-container {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        h3 {
+                                            font-weight: 700;
+                                            font-size: 20px;
+                                        }
+                                        p {
+                                            text-align: left;
+                                            font-weight: 500;
+                                            font-size: 16px;
+                                            height: auto;
+                                            width: auto;
+                                            padding: 5px 0px;
+                                            line-height: 23px;
+                                        }
+                                    }
+                        }
                         }
                 }
         }
@@ -140,22 +158,160 @@
                     
                     .outstanding-cards-container {
                         flex-direction: column;
-                            .outstanding-card {
-                                flex-direction: column;
-                                    img {
-                                        width: 100%;
+                            .cards-container {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 30px;
+                                width: 50%;
+                                .outstanding-card {
+                                    flex-direction: column;
+                                    .card-image-container {
+                                        img {
+                                            width: 100%;
+                                        }
                                     }
-                                    h3 {
-                                        font-weight: 600;
-                                        font-size: 20px;
+                                    .card-content-container {
+                                        h3 {
+                                            font-weight: 600;
+                                            font-size: 20px;
+                                        }
+                                        p {
+                                            font-size: 16px;
+                                            padding: 5px 0px;
+                                        }
                                     }
-                                    p {
-                                        font-size: 16px;
-                                        padding: 5px 0px;
-                                    }
+                                }
                             }
                     }
             }
+    }
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width: 500px) {
+    .work-body {
+        .work-main {
+            flex-direction: column;
+            height: 70%;
+            padding: 10px 0;
+                .work-section {
+                    flex-direction: row;
+                        .work-info {
+                            padding: 0;
+                                h1 {
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    width: 100%;
+                                }
+                                p {
+                                    font-weight: 300;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    text-align: justify;
+                                }
+                        }
+                }
+        }
+
+        .outstanding-section {
+            background-color: white;
+            font-family: $noto-font;
+                .outstanding-title {
+                        h3 {
+                            font-size: 25px;
+                            font-weight: 700;
+                        }
+                }
+                
+                .outstanding-cards-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .cards-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        width: 90%;
+                        .outstanding-card {
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 100%;
+                            .card-image-container {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .card-content-container {
+                                h3 {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    padding: 5px 0px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                        
+                }
+        }
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width: 699px) {
+    
+    .work-body {
+        .outstanding-section {
+                .outstanding-title {
+                        h3 {
+                            font-size: 20px;
+                        }
+                }
+                
+                .outstanding-cards-container {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .cards-container {
+                        display: flex;
+                        flex-direction: column;
+                        width: 70%;
+                        .outstanding-card {
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            width: 100%;
+                            .card-image-container {
+                                width: 100%;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .card-content-container {
+                                h3 {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    padding: 5px 0px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                        
+                }
+        }
     }
 }
 
@@ -194,15 +350,28 @@
                 }
                 
                 .outstanding-cards-container {
+                    display: flex;
                     justify-content: center;
-                    align-items: center;
                     flex-direction: column;
+                    align-items: center;
+
+                    .cards-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        width: 70%;
                         .outstanding-card {
+                            align-items: center;
+                            justify-content: center;
                             flex-direction: column;
-                            width: 80%;
+                            width: 100%;
+                            .card-image-container {
+                                width: 100%;
                                 img {
                                     width: 100%;
                                 }
+                            }
+                            .card-content-container {
                                 h3 {
                                     font-weight: 600;
                                     font-size: 30px;
@@ -211,7 +380,10 @@
                                     font-size: 20px;
                                     padding: 5px 0px;
                                 }
+                            }
                         }
+                    }
+                        
                 }
         }
     }
@@ -240,29 +412,13 @@
                         }
                 }
         }
-
+        
         .outstanding-section {
-                
-                .outstanding-cards-container {
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                        .outstanding-card {
-                            flex-direction: column;
-                            width: 70%;
-                                img {
-                                    width: 100%;
-                                }
-                                h3 {
-                                    font-weight: 600;
-                                    font-size: 30px;
-                                }
-                                p {
-                                    font-size: 20px;
-                                    padding: 5px 0px;
-                                }
-                        }
+                    .cards-container {
+                        width: 60%;
+                    }
+                        
                 }
         }
     }
-}
+

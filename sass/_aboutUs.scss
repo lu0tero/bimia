@@ -5,7 +5,7 @@
             flex-direction: column;
             justify-content: space-around;
             gap: 20px;
-            padding: 50px 20px;
+            padding: 70px 40px;
                 h1 {
                     font-family: $catamaran;
                     font-size: 22px;
@@ -16,7 +16,7 @@
                     border: 1px solid black;
                 }
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 400;
                     text-align: justify;
                 }
@@ -26,8 +26,8 @@
             justify-content: center;
             align-items: center;
             background-color: #EFEFEF;
-            padding: 35px 50px;
-            gap: 20px;
+            padding: 70px 50px;
+            gap: 50px;
                 .aboutUs-card {
                     display: flex;
                     flex-direction: column;
@@ -36,12 +36,15 @@
                     gap: 10px;
                     background-color: white;
                     box-shadow: 0px 4.07px 4.07px rgba(0, 0, 0, 0.25);
-                    padding: 25px 50px;
-                    max-width: 450px;
+                    padding: 50px 30px;
+                    max-width: 350px;
+                        img {
+                            width: 40%;
+                        }
                         h3 {
                             font-family: $catamaran;
                             font-weight: 700;
-                            font-size: 30px;
+                            font-size: 25px;
                         }
                         span {
                             font-size: 18px;
@@ -49,8 +52,9 @@
                         }
                         p {
                             font-weight: 500;
-                            font-size: 18px;
-                            text-align: justify;
+                            font-size: 15px;
+                            text-align: left;
+                            
                         }
                 }
         }
