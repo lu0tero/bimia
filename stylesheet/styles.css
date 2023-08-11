@@ -790,7 +790,7 @@ header #burger-menu {
   max-width: 350px;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card img {
-  width: 40%;
+  width: 70%;
 }
 .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
   font-family: "Catamaran", sans-serif;
@@ -804,7 +804,7 @@ header #burger-menu {
 .aboutUs-container .aboutUs-cards-container .aboutUs-card p {
   font-weight: 500;
   font-size: 15px;
-  text-align: left;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 800px) {
@@ -821,10 +821,14 @@ header #burger-menu {
     flex-direction: column;
   }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card {
-    max-width: 700px;
+    max-width: 450px;
+    align-self: center;
   }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card h3 {
     font-size: 28px;
+  }
+  .aboutUs-container .aboutUs-cards-container .aboutUs-card img {
+    width: 60%;
   }
   .aboutUs-container .aboutUs-cards-container .aboutUs-card span {
     font-size: 16px;
@@ -1003,7 +1007,7 @@ header #burger-menu {
   font-size: 20px;
 }
 .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-content-container p {
-  text-align: left;
+  text-align: justify;
   font-weight: 500;
   font-size: 16px;
   height: auto;
@@ -1214,7 +1218,8 @@ header #burger-menu {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    align-self: center;
+    width: 80%;
   }
   .work-body .outstanding-section .outstanding-cards-container .cards-container .outstanding-card .card-image-container {
     width: 100%;

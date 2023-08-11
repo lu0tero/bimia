@@ -39,7 +39,7 @@
                     padding: 50px 30px;
                     max-width: 350px;
                         img {
-                            width: 40%;
+                            width: 70%;
                         }
                         h3 {
                             font-family: $catamaran;
@@ -53,8 +53,7 @@
                         p {
                             font-weight: 500;
                             font-size: 15px;
-                            text-align: left;
-                            
+                            text-align: justify;
                         }
                 }
         }
@@ -74,9 +73,13 @@
             .aboutUs-cards-container {
                 flex-direction: column;
                     .aboutUs-card {
-                        max-width: 700px;
+                        max-width: 450px;
+                        align-self: center;
                             h3 {
                                 font-size: 28px;
+                            }
+                            img {
+                                width: 60%;
                             }
                             span {
                                 font-size: 16px;
